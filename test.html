@@ -1,0 +1,54 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div id="con1"></div>
+    <div id="con2"></div>
+    <button type="button" class="btn" value="toggle" onclick="toggle()">Toggle</button>
+
+    <script>
+        const ele1 = document.getElementById("con1");
+        const ele2 = document.getElementById("con2");
+
+        function toggle(){
+            if(ele1.style.zIndex=='0'){
+                ele1.style.zIndex='100';
+                ele2.style.zIndex='0';
+            }
+            else if(ele1.style.zIndex=='100'){
+                ele1.style.zIndex='0';
+                ele2.style.zIndex='100';
+            }
+        }
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div id="container">
+        <div id="con1" class="box"></div>
+        <div id="con2" class="box"></div>
+    </div>
+    <button type="button" class="btn" value="Toggle" onclick="toggle()">Toggle</button>
+
+    <script>
+        const container = document.getElementById("container");
+
+        function toggle(){
+            container.classList.toggle("reversed");
+        }
+    </script>
+</body>
+</html>

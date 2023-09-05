@@ -1,0 +1,52 @@
+/* #con1{
+    position: absolute;
+    background-color: blue;
+    z-index: 0;
+    width: 200px;
+    height: 200px;
+}
+#con2{
+    position: absolute;
+    z-index: 100;
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.btn{
+    margin-top: 300px;
+} */
+#container {
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+#con1 {
+    background-color: blue;
+    z-index: 0;
+}
+
+#con2 {
+    background-color: red;
+    z-index: 100;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.reversed>#con1 {
+    z-index: 100;
+}
+
+.reversed>#con2 {
+    z-index: 0;
+}
+
+.btn {
+    margin-top: 300px;
+}
